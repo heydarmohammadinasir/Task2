@@ -240,3 +240,53 @@ html {
   color: var(--color-red);
   font-size: 1.4rem;
 }
+
+.productinfo__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 350px;
+  height: 124px;
+}
+.DeliveryDate__Container {
+  display: flex;
+  gap: 1.1rem;
+  padding: 0.4rem 0.8rem;
+  color: var(--color-black);
+}
+.productinfo__text {
+  display: flex;
+  gap: 0.8rem;
+  padding: 0.4rem 0.8rem;
+}
+.OrderCode__Container {
+  display: flex;
+  gap: 0.8rem;
+  padding: 0.4rem 0.8rem;
+}
+.DeliveryDate__Text {
+  font-size: 1.6rem;
+  color: var(--color-grey);
+}
+.DeliveryDate__Text.DeliveryDate--Color {
+  color: var(--color-black);
+}
+.OldPrice_Container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.4rem;
+  text-align: left;
+}
+.OldPrice {
+  font-size: 2.4rem;
+  color: var(--color-black);
+  width: 104px;
+  height: 37px;
+  line-height: 100%;
+}
+.OldPrice__Label {
+  font-size: 1rem;
+  color: var(--color-black);
+  width: 25px;
+  height: 16px;
+}
