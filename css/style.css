@@ -19,6 +19,8 @@ html {
   --color-red: #cc312d;
   --bgc-sidebar: #f7f7f7;
   --delivery-borderbox: #ebebeb;
+  --bgc-badge: #448cf91a;
+  --color-badge: #2e7af1;
 }
 
 .container {
@@ -184,4 +186,22 @@ html {
   width: 106px;
   height: 53px;
   opacity: 1;
+}
+
+/* Badge */
+
+.badge {
+  display: flex;
+  background-color: var(--bgc-badge);
+  width: 143px;
+  height: 44px;
+  border-radius: 4rem;
+  opacity: 1;
+  gap: 0.8rem;
+  padding: 0.8rem 1.6rem;
+}
+.badge__text {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: var(--color-badge);
 }
