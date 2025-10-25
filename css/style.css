@@ -205,3 +205,38 @@ html {
   margin-top: 0.5rem;
   color: var(--color-badge);
 }
+
+/* OrderDetails */
+.orderdetails-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+  width: 350px;
+  height: 104px;
+  background-color: var(--bgc-sidebar);
+  padding: 1rem;
+}
+.orderdetails__products {
+  display: flex;
+}
+.orderdetails__product {
+  background-color: var(--color-white);
+  border: 4px solid var(--bgc-sidebar);
+  border-radius: 12px;
+}
+
+.orderdetails__product-image {
+  width: 44px;
+  height: 44px;
+}
+.orderdetails__div {
+  display: flex;
+  gap: 0.8rem;
+  width: 116px;
+  height: 22px;
+}
+.orderdetails__button {
+  color: var(--color-red);
+  font-size: 1.4rem;
+}
