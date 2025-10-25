@@ -10,3 +10,123 @@
 html {
   font-size: 62.5%;
 }
+
+:root {
+  --color-black: #130505;
+  --color-white: #ffffff;
+  --color-grey: #606060;
+  --color-blue: #2e7af1;
+  --color-red: #cc312d;
+  --bgc-sidebar: #f7f7f7;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  background-color: var(--bgc-sidebar);
+  height: 520px;
+  width: 310px;
+  border-radius: 20px;
+  padding: 2.4rem 1.9rem;
+}
+.sidebar__header {
+  display: flex;
+  justify-content: space-between;
+  width: 272px;
+  height: 56px;
+}
+.sidebar__userinfobox {
+  display: flex;
+  gap: 1.2rem;
+  width: 150px;
+  height: 56px;
+}
+.sidebar__userdetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 82px;
+  height: 49px;
+}
+.sidebar-pen__img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+.sidebar__username {
+  color: var(--color-black);
+}
+.sidebar__contact {
+  color: var(--color-grey);
+}
+.account__links {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+  width: 272px;
+  height: 384px;
+}
+.sidebar__order-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  width: 272px;
+  height: 284px;
+}
+.sidebar__orders-button {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  display: flex;
+  gap: 1.2rem;
+  padding: 1rem 1.6rem;
+  border-radius: 44px;
+  transition: transfor;
+}
+.sidebar__orders-button:hover {
+  transform: scale(1);
+}
+.multiple__messages {
+  display: flex;
+  justify-content: space-between;
+}
+.sidebar__messages-info {
+  display: flex;
+  gap: 1.2rem;
+  width: 272px;
+  height: 52px;
+  padding: 1.4rem 1.6rem;
+}
+.logout__button {
+  display: flex;
+  gap: 1.2rem;
+  width: 272;
+  height: 52;
+  margin: 1.2rem 1.6rem;
+  opacity: 1;
+}
+.logout__button:hover {
+  background-color: var(--color-red);
+  color: var(--color-white);
+  border-radius: 1rem;
+  transition: all 0.5s;
+  padding: 0.5rem 0;
+}
+
+/* delivery-info__list */
+.delivery-info__list {
+  display: flex;
+  width: 978;
+  height: 84;
+  position: relative;
+  top: 717px;
+  left: -608px;
+  gap: 1.6rem;
+  opacity: 1;
+}
