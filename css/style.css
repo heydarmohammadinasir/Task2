@@ -104,6 +104,10 @@ html {
   display: flex;
   justify-content: space-between;
 }
+.message--badge {
+  position: relative;
+  right: 4rem;
+}
 .sidebar__messages-info {
   display: flex;
   gap: 1.2rem;
@@ -118,6 +122,7 @@ html {
   height: 52;
   margin: 1.2rem 1.6rem;
   opacity: 1;
+  color: var(--color-black);
 }
 .logout__button:hover {
   background-color: var(--color-red);
@@ -228,6 +233,7 @@ html {
 .badge__text {
   font-size: 1.2rem;
   margin-top: 0.5rem;
+  margin-right: 1rem;
   color: var(--color-badge);
 }
 
@@ -315,6 +321,7 @@ html {
 }
 .orderdetails__div {
   display: flex;
+  flex-shrink: 0;
   gap: 1rem;
 }
 .orderdetails__button {
@@ -332,6 +339,9 @@ html {
   }
   .header__title {
     display: none;
+  }
+  .message--badge {
+    position: static;
   }
   .delivery__info {
     display: grid;
