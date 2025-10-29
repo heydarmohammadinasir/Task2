@@ -6,7 +6,9 @@
 }
 
 body,
-button {
+button,
+input,
+label {
   font-family: IranSansWeb;
   font-size: 1.4rem;
   overflow: auto;
