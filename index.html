@@ -3,7 +3,293 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Task2</title>
   </head>
-  <body></body>
+  <body>
+    <section class="order-page container">
+      <aside class="sidebar">
+        <div class="sidebar__header">
+          <div class="sidebar__userinfobox">
+            <img
+              src="assets/svg/User Avatar.svg"
+              alt="پروفایل کاربر"
+              class="sidebar-userinfo__img"
+            />
+            <div class="sidebar__userdetails">
+              <span class="sidebar__username">حیدر محمدی</span>
+              <span class="sidebar__contact">09123456789</span>
+            </div>
+          </div>
+          <img
+            src="assets/svg/Pen.svg"
+            alt="ویرایش اطلاعات"
+            class="sidebar-pen__img"
+          />
+        </div>
+        <div class="sidebar__account-links">
+          <div class="sidebar__order-info">
+            <a href="#" class="sidebar__orders-button">
+              <img
+                src="assets/svg/home-happy.svg"
+                alt="سفارش های من"
+                class="sidebar-myorders__img"
+              />
+              <span class="sidebar__myorders">سفارش های من</span>
+            </a>
+            <div class="sidebar__messages-info">
+              <img
+                src="assets/svg/user-search.svg"
+                alt="پروفایل حساب کاربری"
+                class="message-info__img"
+              />
+              <span class="sidebar--orders-text">اطلاعات حساب کاربری</span>
+            </div>
+            <div class="multiple__messages">
+              <div class="sidebar__messages-info">
+                <img
+                  src="assets/svg/notification-bell-ringing.svg"
+                  alt="پیام ها"
+                  class="message-info__img"
+                />
+                <span class="sidebar--orders-text">پیام ها</span>
+              </div>
+              <span class="message--badge">
+                <img
+                  src="assets/svg/Message Badge.svg"
+                  alt="بج"
+                  class="message--badge-img"
+                />
+              </span>
+            </div>
+            <div class="sidebar__messages-info">
+              <img
+                src="assets/svg/chat-bubble-rectangle.svg"
+                alt="نظرات من"
+                class="message-info__img"
+              />
+              <span class="sidebar--orders-text">نظرات من</span>
+            </div>
+          </div>
+          <br /><br /><br />
+          <a href="#" class="logout__button">
+            <img src="assets/svg/logout.svg" alt="خروج" class="logout-img" />
+            <span class="logout-text">خروج</span>
+          </a>
+        </div>
+      </aside>
+
+      <span class="header__title">
+        <h3 class="header__text">سفارش های من</h3>
+        <span
+          ><img
+            class="right__svg"
+            src="assets/svg/Right.svg"
+            alt="رفتن به سفارش های من"
+        /></span>
+      </span>
+
+      <main class="order-menu">
+        <div class="delivery__container">
+          <div class="delivery__borderbox selected--borderbox">
+            <div class="delivery__details-box">
+              <div class="delivery__icon-borderbox time--circle">
+                <img
+                  src="assets/svg/Time Circle.svg"
+                  alt="زمان تحویل"
+                  class="delivery__box-img"
+                />
+              </div>
+              <div class="delivery__details">
+                <span class="inprogress__text">در حال پردازش</span>
+                <span class="order__text">5 سفارش</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="delivery__borderbox">
+            <div class="delivery__details-box">
+              <div class="delivery__icon-borderbox check--circle">
+                <img
+                  src="assets/svg/Check Circle.svg"
+                  alt="بررسی تحویل"
+                  class="delivery__box-img"
+                />
+              </div>
+              <div class="delivery__details">
+                <span class="inprogress__text">تحویل شده</span>
+                <span class="order__text">4 سفارش</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="delivery__borderbox">
+            <div class="delivery__details-box">
+              <div class="delivery__icon-borderbox back--circle">
+                <img
+                  src="assets/svg/circle-u-turn-left-up.svg"
+                  alt="مرجوعی"
+                  class="delivery__box-img"
+                />
+              </div>
+              <div class="delivery__details">
+                <span class="inprogress__text">مرجوعی</span>
+                <span class="order__text">2 سفارش</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="delivery__borderbox">
+            <div class="delivery__details-box">
+              <div class="delivery__icon-borderbox close--circle">
+                <img
+                  src="assets/svg/Close Circle.svg"
+                  alt="زمان تحویل"
+                  class="delivery__box-img"
+                />
+              </div>
+              <div class="delivery__details">
+                <span class="inprogress__text">لغو شده</span>
+                <span class="order__text">3 سفارش</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="productinfo__wrapper">
+          <span class="badge">
+            <img
+              src="assets/svg/Time Circle.svg"
+              alt="در حال پردازش"
+              class="badge__image"
+            />
+            <span class="badge__text">در حال پردازش</span>
+          </span>
+          <div class="delivery__info">
+            <div class="DeliveryDate__Container">
+              <span class="DeliveryDate__Text">تاریخ تحویل سفارش:</span>
+              <span class="DeliveryDate__Text DeliveryDate--Color"
+                >1404/08/04</span
+              >
+            </div>
+
+            <div class="OrderCode__Container">
+              <span class="DeliveryDate__Text">کد سفارش:</span>
+              <span class="DeliveryDate__Text DeliveryDate--Color"
+                >2165449</span
+              >
+            </div>
+            <div class="OldPrice_Container">
+              <span class="OldPrice">1,550,000</span>
+              <span class="OldPrice__Label">تومان</span>
+            </div>
+          </div>
+
+          <div class="orderdetails-container">
+            <div class="orderdetails__products">
+              <div class="orderdetails__product">
+                <img
+                  src="assets/images/product.png"
+                  alt="محصول"
+                  class="orderdetails__product-image"
+                />
+                <div class="message__badge">1</div>
+              </div>
+              <div class="orderdetails__product">
+                <img
+                  src="assets/images/product1.png"
+                  alt="محصول"
+                  class="orderdetails__product-image"
+                />
+                <div class="message__badge">2</div>
+              </div>
+              <div class="orderdetails__product">
+                <img
+                  src="assets/images/product2.png"
+                  alt="محصول"
+                  class="orderdetails__product-image"
+                />
+                <div class="message__badge">3</div>
+              </div>
+            </div>
+            <div class="orderdetails__div">
+              <a href="#" class="orderdetails__button">جزئیات سفارش</a>
+              <img
+                src="assets/svg/Arrow Icon.svg"
+                alt="رفتن به جزئیات سفارش"
+                class="orderdetails__arrowicon"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="productinfo__wrapper">
+          <span class="badge">
+            <img
+              src="assets/svg/Time Circle.svg"
+              alt="در حال پردازش"
+              class="badge__image"
+            />
+            <span class="badge__text">در حال پردازش</span>
+          </span>
+          <div class="delivery__info">
+            <div class="DeliveryDate__Container">
+              <span class="DeliveryDate__Text">تاریخ تحویل سفارش:</span>
+              <span class="DeliveryDate__Text DeliveryDate--Color"
+                >1404/08/04</span
+              >
+            </div>
+
+            <div class="OrderCode__Container">
+              <span class="DeliveryDate__Text">کد سفارش:</span>
+              <span class="DeliveryDate__Text DeliveryDate--Color"
+                >2165449</span
+              >
+            </div>
+            <div class="OldPrice_Container">
+              <span class="OldPrice">1,550,000</span>
+              <span class="OldPrice__Label">تومان</span>
+            </div>
+          </div>
+
+          <div class="orderdetails-container">
+            <div class="orderdetails__products">
+              <div class="orderdetails__product">
+                <img
+                  src="assets/images/product.png"
+                  alt="محصول"
+                  class="orderdetails__product-image"
+                />
+                <div class="message__badge">1</div>
+              </div>
+              <div class="orderdetails__product">
+                <img
+                  src="assets/images/product1.png"
+                  alt="محصول"
+                  class="orderdetails__product-image"
+                />
+                <div class="message__badge">2</div>
+              </div>
+              <div class="orderdetails__product">
+                <img
+                  src="assets/images/product2.png"
+                  alt="محصول"
+                  class="orderdetails__product-image"
+                />
+                <div class="message__badge">3</div>
+              </div>
+            </div>
+            <div class="orderdetails__div">
+              <a href="#" class="orderdetails__button">جزئیات سفارش</a>
+              <img
+                src="assets/svg/Arrow Icon.svg"
+                alt="رفتن به جزئیات سفارش"
+                class="orderdetails__arrowicon"
+              />
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+  </body>
 </html>
