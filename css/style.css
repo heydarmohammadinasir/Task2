@@ -329,12 +329,47 @@ html {
   font-size: 1.4rem;
 }
 
+@media screen and (min-width: 768px) {
+  .order-page {
+    grid-template-columns:
+      minmax(30rem, max-content)
+      repeat(auto-fill, 400px);
+    gap: 2rem;
+  }
+  .delivery__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20rem) minmax(0, 175px);
+    overflow-x: hidden;
+  }
+  .delivery__borderbox {
+    width: 190px;
+    height: 84px;
+    border: 1.5px solid var(--delivery-borderbox);
+    border-radius: 16px;
+    opacity: 1;
+    gap: 2.4rem;
+    padding: 1.5rem 3rem;
+  }
+  .header__title {
+    display: none;
+  }
+  .message--badge {
+    position: static;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .container {
     margin: 1.5rem;
   }
   .order-page {
     grid-template-columns: 31rem 1fr;
+    gap: 1.6rem;
+  }
+  .delivery__container {
+    display: flex;
+    justify-items: center;
+    overflow-x: auto;
     gap: 1.6rem;
   }
   .header__title {
